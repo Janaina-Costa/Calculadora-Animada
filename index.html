@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Calculadora</title>
+</head>
+
+<body>
+    <header>
+        <h1 id="texto"></h1>
+    </header>
+    
+   <header class="calculadora" >
+        <input type="text" id="result">
+ 
+   
+
+    <div class="teclas">
+
+        <input type="button" value="C" class="oper" id="btnC" onclick="clearDisplay()">
+        <input type="button" value="+/-" class="oper" id="mm" onclick="maisMenos()">
+        <input type="button" value="<=" class="oper" id="delete" onclick="deleteNum()">
+        <input type="button" value="%" class="oper" id="percent" onclick="percent()">
+        <br>
+
+
+        <input type="button" value="7" class="num" id="" onclick="insert('7')">
+        <input type="button" value="8" class="num" id="" onclick="insert('8')">
+        <input type="button" value="9" class="num" id="" onclick="insert('9')">
+        <input type="button" value="&#247" class="oper" id="insert" onclick="insert('/')">
+        <br>
+
+        <input type="button" value="4" class="num" id="" onclick="insert('4')">
+        <input type="button" value="5" class="num" id="" onclick="insert('5')">
+        <input type="button" value="6" class="num" id="" onclick="insert('6')">
+        <input type="button" value="x" class="oper" id="mult" onclick="insert('*')">
+        <br>
+
+        <input type="button" value="1" class="num" id="" onclick="insert('1')">
+        <input type="button" value="2" class="num" id="" onclick="insert('2')">
+        <input type="button" value="3" class="num" id="" onclick="insert('3')">
+        <input type="button" value="-" class="oper" id="sub" onclick="insert('-')">
+        <br>
+        
+        <input type="button" value="." class="num" id="" onclick="insert('.')">
+        <input type="button" value="0" class="num" id="" onclick="insert('0')">
+        <input type="button" value="=" class="num" id="" onclick="calcular()" >
+        <input type="button" value="+" class="oper" id="add" onclick="insert('+')">
+        <br>
+
+
+    </div>
+   </header>
+   
+</body>
+</html>
